@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo Selectors | Directory Tree</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .tree  {
+            list-style-type: "┝";
+            font-size: 64px;
+        }
+        .folder {
+            color: white;
+            padding: 24px 0 24px 72px;
+
+            background-image: url(images/Papirus-Team-Papirus-Places-Folder-red.64.png) ;
+            background-repeat: no-repeat;
+            line-height: 8px;
+        }
+        .folder:last-child {
+            list-style-type: "┗";
+        }
+        
+        .folder:hover {
+            color: red ;
+        }
+        .empty  {
+            background-image: url(images/Papirus-Team-Papirus-Places-Folder-red-drag-accept.64.png);
+        }
+        .name   {
+            font-size: 18px;
+        }
+        .name:hover {
+            color: red;
+        }
+        .file {
+            color: white;
+            padding: 24px 0 24px 72px;
+
+            background-image: url(images/Oxygen-Icons.org-Oxygen-Mimetypes-application-vnd-oasis-opendocument-text.64.png) ;
+            background-repeat: no-repeat;
+            line-height: 22px;
+        }
+        .file:last-child {
+            list-style-type: "┗";
+        }
+        .file:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+     <ul class="tree">
+        <li class="folder">
+            <div class="name">PROJECT [DONE]</div>
+            <ul class="tree">
+                <li class="file"><div class="name">File 1</div></li>
+                <li class="file"><div class="name">File 2</div></li>
+            </ul>
+        </li>
+        <li class="folder"><div class="name">PROJECT [NOW]</div></li>
+        <li class="folder empty"><div class="name">PROGECT [TBD]</div></li>
+     </ul>
+</body>
+</html>
