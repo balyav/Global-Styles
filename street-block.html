@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+
+        }
+        .street {
+            background-color: rgb(140, 165, 194);
+        }
+        .house {
+            width: 150px;
+            display: inline-block;
+            margin-right: 30px;
+        }
+        .house-roof {
+            width: 0;
+            height: 0;
+            border: 75px solid brown;
+            border-top-width: 0px ;
+            border-left-color: transparent;
+            border-right-color: transparent;
+
+        }
+        .house-wall {
+            background-color: antiquewhite;
+            width: 150px;
+            height: 150px;
+        }
+        .house-window {
+            border: 4px solid brown;
+            width: 50px;
+            height: 50px;
+            transform: translateX(45px) translateY(45px);
+        }
+        .window-vertical {
+            border: 2px solid brown;
+            border-bottom: 0px;
+            border-left:0px ;
+            border-top: 0px;
+            width: 25px;
+            height: inherit;
+        }
+        
+        .window-horizontal {
+            border: 2px solid brown;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+
+            width: 50px;
+            height: 23px;
+        }
+           
+        .building-tall {
+            background-color: bisque;
+            height: 300px;
+            width: 100px;
+            display: inline-block;
+        }
+        .balcony-5 {
+            border: 7px solid brown;
+            height: 30px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-right: 0px;
+            transform: translateX(-6px) translateY(20px)
+        }
+        .balcony-4 {
+            border: 7px solid brown;
+            height: 30px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-right: 0px;
+            transform: translateX(-6px) translateY(40px)
+        }
+        .balcony-3 {
+            border: 7px solid brown;
+            height: 30px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-right: 0px;
+            transform: translateX(-6px) translateY(60px)
+        }
+        .balcony-2 {
+            border: 7px solid brown;
+            height: 30px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-right: 0px;
+            transform: translateX(-6px) translateY(80px)
+        }
+        .balcony-1 {
+            border: 7px solid brown;
+            height: 30px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-right: 0px;
+            transform: translateX(-6px) translateY(100px)
+        }
+        .cloud  {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 25px;
+        }
+        .tree {
+            display: inline-block;
+            margin-right: 0px;
+        }
+        .building-small {
+            display: inline-block;
+            width: 80px;
+        }
+        .house-small-roof {
+            width: 0;
+            height: 0;
+            border: 40px solid brown;
+            border-top-width: 0px ;
+            border-left-color: transparent;
+            border-right-color: transparent;
+
+        }
+        .house-small-wall {
+            background-color: antiquewhite;
+            width: 80px;
+            height: 80px;
+        
+        }
+        .house-small-window {
+            border: 2px solid brown;
+            width: 15px;
+            height: 15px;
+            transform: translateX(31px) translateY(25px);
+        }
+        .house-small-window-h {
+
+            border: 2px solid brown;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+
+            width: 15px;
+            height: 7px;
+        }
+        .house-small-window-v {
+            border: 2px solid brown;
+            border-bottom: 0px;
+            border-left:0px ;
+            border-top: 0px;
+            width: 6px;
+            height: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="street">
+        <div class="house">
+            <div class="house-roof"></div>
+            <div class="house-wall">
+                <div class="house-window">
+                    <div class="window-vertical">
+                        <div class="window-horizontal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="building-tall">
+            <div class="balcony-5"></div>
+            <div class="balcony-4"></div>
+            <div class="balcony-3"></div>
+            <div class="balcony-2"></div>
+            <div class="balcony-1"></div>
+        </div>
+        <div class="cloud"><img src="https://icons.iconarchive.com/icons/flaticonmaker/flat-style/48/cloud-icon.png" alt=""></div>
+        <div class="tree"><img src="https://icons.iconarchive.com/icons/onkz-creative/winter-flat/72/Tree-Snow-icon.png" alt=""></div>
+        <div class="building-small">
+            <div class="house-small-roof"></div>
+            <div class="house-small-wall">
+                <div class="house-small-window">
+                    <div class="house-small-window-h">
+                        <div class="house-small-window-v"></div>
+                    </div></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
