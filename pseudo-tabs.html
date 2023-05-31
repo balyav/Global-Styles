@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Selectors</title>
+    <style>
+        body {
+            background-color: #dfd8d8fd;
+        }
+        .tabs {
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #bbb;
+            background-color: rgb(241, 237, 232);
+            text-align: center;
+        }
+        .tabs-item {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 17px;
+            margin: 5px;
+
+            width: 70px;
+            height: 80px;
+            vertical-align: top;
+            text-align: center;
+            border-radius: 17px;
+
+            transition: 0.35s;
+        }
+        .tabs-item:hover {
+            background-color: #BBB
+        }
+        .tabs-link {
+            text-decoration: none;
+            color: #222;
+
+        }
+        .tabs-options {
+            font-size: 25px;
+            line-height: 5px;
+
+            background-color: #999;
+            height: 30px;
+            width: 32px;
+            border-radius: 32px;
+            transform: translateX(55px) translateY(-88px);
+            opacity: 0;
+        }
+        .tabs-options:hover {
+            opacity: 1.0;
+            transition: 0.35s
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li class="tabs-item">
+           <a class="tabs-link" href="">
+            <img src="https://icons.iconarchive.com/icons/social-media-icons/glossy-social/48/Github-icon.png" alt="">
+            <br>
+            username
+           </a>
+           <div class="tabs-options">
+                . 
+                <br>
+                .
+                <br>
+                . 
+           </div>
+        </li>
+        <li class="tabs-item">
+            <a class="tabs-link" href="">
+                <img src="https://icons.iconarchive.com/icons/limav/flat-gradient-social/48/Vk-icon.png" alt="">
+                <br>
+                 newfriend
+            </a>
+            <div class="tabs-options">
+                .
+                <br>
+                .
+                <br>
+                .
+            </div>
+        </li>
+        <li class="tabs-item">
+            <a class="tabs-link" href="">
+                <img src="https://icons.iconarchive.com/icons/dakirby309/simply-styled/48/YouTube-icon.png" alt="">
+                <br>
+                lastvideo
+            </a>
+            <div class="tabs-options">
+                .
+                <br>
+                .
+                <br>
+                .
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
