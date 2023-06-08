@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LAYOUT SECTION</title>
+    <style>
+        body {
+        font-family: Arial;
+        background-color: #e6e6e6;
+        }
+        .services-promo {
+           /* border: 1px solid black; */
+            margin: 20px;
+            background-image:url(https://icons.iconarchive.com/icons/robinweatherall/cleaning/256/bucket-icon.png),
+            url(https://icons.iconarchive.com/icons/robinweatherall/cleaning/256/pan-icon.png);
+            /*radial-gradient(
+                 #ccccff, #0000e6 44%, transparent 45%
+            ) ,
+            radial-gradient(
+                 #ccccff, #0000e6 44%, transparent 45%
+            ) ; */
+            background-size: 100px 100px, 100px 100px;
+            background-repeat: no-repeat;
+            background-position: 
+              0 0, 
+              80% 200px ;
+            animation: floating 8s 10 alternate linear;
+        }
+        .services-promo h1 {
+            text-align: center;
+            margin-bottom: 5px;
+            color:  #3385ff;
+        }
+        .services-promo h2 {
+            margin-left: 20%;
+            color: #4db8ff;
+            margin-top: 0
+        }
+        .services-promo p {
+          margin: 0 20% 2% 20%;
+          color:  #4d79ff;
+        }
+        .services-promo h3 {
+            margin-left: 20%;
+            margin-top: 40px;
+            color: #4db8ff
+        }
+        .services-promo ul {
+            margin-left: 20%;
+            padding: 0 20px;
+            color: #4d79ff;
+        }
+        .services-promo p:last-child {
+            margin-top: 40px;
+            font-size: 130%;
+        }
+        .services-promo a {
+            text-decoration: none;
+            background-color: #006600 ;
+            color: white;
+            padding: 10px 20px;
+        }
+        .services-promo a:hover {
+            background-color:  #00ff00;
+        }
+        @keyframes floating { 
+            from {
+                background-position: 0 -100px, 
+                80% 480px ;
+            } 
+                
+            
+            to {
+                background-position: 0px 450px,
+                80% -50px;
+            } 
+            
+        }
+    </style>
+</head>
+<body>
+    <header class="services-promo">
+        <h1>CLEANING SERVICES in YOUR COUNTRY</h1>
+        <h2>We do it fast <br> and cheap</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellat delectus in! Aliquam mollitia eveniet odio sapiente eaque enim, libero ex omnis soluta ipsum, veniam nemo nihil? Quis, aspernatur inventore.</p>
+        <h3>SERVICES</h3>
+       <ul>
+        <li>Lorem.</li>
+        <li>Recusandae.</li>
+        <li>Consequatur!</li>
+        <li>Sit?</li>
+        <li>Quod?</li>
+       </ul>
+        <p>Don`t waste your time,book us <a href="#">NOW</a></p>
+    </header>
+</body>
+</html>
