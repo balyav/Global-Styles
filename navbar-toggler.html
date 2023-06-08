@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NAVBAR TOGGLER</title>
+    <style>
+        body {
+            background-color: rgb(111, 161, 163);
+            font-family: Arial;
+        }
+        .menu {
+            background-color: #234;
+            /*margin-top: -265px;*/
+            transition: 0.7s;
+            margin-left: -160px;
+            width:60%;
+
+        }
+        .menu:target{
+            margin-left: 0;
+        }
+        .menu-title {
+            margin: 0;
+            padding: 10px;
+            color: whitesmoke;
+        }
+        .menu-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            border-bottom: 1px solid #345;
+        }
+        li:first-child {
+            border-top: 1px solid #345;
+        }
+        a:hover {
+            color:white;
+            background-color: #345;
+        }
+        a::before {
+            content: "✓";
+            color: green;
+            padding-right: 10px;
+        }
+        .not-avialable::before {
+            content: "✘";
+            color: red;
+        }
+        .toggler {
+            background-color: brown;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            padding: 0;
+            border-radius: 30px;
+            margin-left: 25px;
+            transform: translateX(135px) translateY(-135px);
+
+        }
+        .toggler::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu" id="navbar">
+        <h2 class="menu-title">Our Cuisine</h2>
+            <ul class="menu-list">
+                <li><a href="#">Soup</a></li>
+                <li><a href="#">Salad</a></li>
+                <li><a href="#">Kebab</a></li>
+                <li><a class="not-avialable" href="#">Sushi</a></li>
+                <li><a href="#">Pizza</a></li>
+            </ul>
+        <a class="toggler" href="#navbar">MENU</a>
+    </nav>
+</body>
+</html>
