@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TURN IMAGE</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 50px;
+        }
+        /*
+            HW 1: background image
+        .btn {
+            background-image: url(arrow-right-top.svg);
+            width: 100px;
+            height: 100px;
+        } */
+        #image{
+            margin: 100px;
+        }
+        a img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        #image:target  {
+            transform: rotate(180deg);
+            transition: 1s;
+
+        }
+    </style>
+</head>
+<body>
+    <!--    <button class="btn"></button>    --->
+    <!---HW#2-->
+    <img id="image" src="https://fastly.picsum.photos/id/216/500/500.jpg?hmac=gqHfKMbp7yFjtoZOoNMXlpmGyJ2zDj8T4FbySYzqd9E" alt="">
+    <br>
+    <a href="#image"><img src="arrow-right-top.svg" alt=""></a>
+</body>
+</html>
