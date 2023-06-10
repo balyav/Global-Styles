@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            
+        }
+        .cinema {
+            padding: 5px;
+        }
+        .cinema .vip span {
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Orange-Seat-icon.png);
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cinema .main span {
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Magenta-Seat-icon.png);
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .road {
+            display: inline-block;
+            width: 70px;
+           /* border: 2px dotted green;*/
+        }
+        .cinema .front span {
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Magenta-Seat-icon.png);
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cinema .front .row-1 :nth-child(4):before {
+            content: url(https://icons.iconarchive.com/icons/custom-icon-design/flatastic-4/48/Male-user-accept-icon.png);
+        vertical-align: top;
+        }
+        .cinema .front .row-1 :nth-child(1):before {
+            content: url(https://icons.iconarchive.com/icons/custom-icon-design/flatastic-4/48/Male-user-accept-icon.png);
+            vertical-align: top;
+        }
+        .cinema .front .row-2 :nth-child(3):before {
+            content: url(https://icons.iconarchive.com/icons/custom-icon-design/flatastic-4/48/Male-user-accept-icon.png);
+        vertical-align: top;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>ADVANCED CSS Selectors <br> Cinema</h1>
+    <div class="cinema">
+        <div class="vip">
+            <h2>VIP</h2>
+            <div class="row"><span>1</span><span>2</span><span >3</span><span >4</span><span >5</span><span >6</span>
+                <span >7 <br><img src="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-4/48/Male-user-accept-icon.png" alt=""></span></div>
+        </div>
+        <div class="main">
+            <h2>MAIN</h2>
+            <div class="row">
+                <span >1</span><span >2</span><span >3</span><span >4</span>
+                <div class="road"></div>
+                <span >5 <br><img src="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-5/48/Female-user-accept-icon.png" alt=""></span><span >6</span><span >7</span><span >8</span>
+            </div>
+            <div class="row">
+                <span >1</span><span >2</span><span >3</span><span>4</span>
+                <div class="road"></div>
+                <span >5</span><span >6</span><span >7</span><span >8</span>
+            </div>
+            <div class="row">
+                <span>1</span><span >2</span><span>3</span><span >4</span>
+                <div class="road"></div>
+                <span >5</span><span >6</span><span >7</span><span >8</span>
+            </div>
+        </div>
+        <div class="front">
+            <h2>FRONT</h2>
+            <div class="row-1"><span>1</span><span >2</span><span >3</span><span >4</span><span >5</span></div>
+            <div class="row-2"><span>1</span><span >2</span><span >3</span><span >4</span><span >5</span></div>
+        </div>
+    </div>
+</body>
+</html>
